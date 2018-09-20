@@ -5,7 +5,7 @@ No splendid GUI interface, but the most efficient (less than 2 minutes per scan 
 
 Version: 1.0.0
 
-####Features:####
+#### Features ####
 
 - Find security vulnerabilities in an Android app
 - Check if the code is missing best practices
@@ -14,7 +14,7 @@ Version: 1.0.0
 - Check the app’s security protection (marked as ```<Hacker>```, designed for app repackaging hacking)
 
 
-##Author
+## Author
 
 - Yu-Cheng Lin  (androbugs.framework at gmail.com, @AndroBugs)
 
@@ -42,13 +42,13 @@ Version: 1.0.0
 
 ## Usage for Unix/Linux
 
-####To run the AndroBugs Framework:####
+#### To run the AndroBugs Framework ####
 
 ```
 python androbugs.py -f [APK file]
 ```
 
-####To check the usage:####
+#### To check the usage ####
 
 ```
 python androbugs.py -h
@@ -58,7 +58,7 @@ python androbugs.py -h
 
 **Prerequisite: Setup MongoDB and config your own MongoDB settings in "androbugs-db.cfg"**
 
-####To run the massive analysis for AndroBugs Framework:####
+#### To run the massive analysis for AndroBugs Framework ####
 
 ```
 python AndroBugs_MassiveAnalysis.py -b [Your_Analysis_Number] -t [Your_Analysis_Tag] -d [APKs input directory] -o [Report output directory]
@@ -70,7 +70,7 @@ python AndroBugs_MassiveAnalysis.py -b 20151112 -t BlackHat -d ~/All_Your_Apps/ 
 ```
 
 
-####To get the summary report and all the vectors of massive analysis:####
+#### To get the summary report and all the vectors of massive analysis ####
 
 ```
 python AndroBugs_ReportSummary.py -m massive -b [Your_Analysis_Number] -t [Your_Analysis_Tag]
@@ -82,7 +82,7 @@ python AndroBugs_ReportSummary.py -m massive -b 20151112 -t BlackHat
 ```
 
 
-####To list the potentially vulnerable apps by Vector ID and Severity Level (Log Level):####
+#### To list the potentially vulnerable apps by Vector ID and Severity Level (Log Level) ####
 
 ```
 python AndroBugs_ReportByVectorKey.py -v [Vector ID] -l [Log Level] -b [Your_Analysis_Number] -t [Your_Analysis_Tag]
@@ -99,12 +99,12 @@ python AndroBugs_ReportByVectorKey.py -v WEBVIEW_RCE -l Critical -b 20151112 -t 
 
 ![AndroBugs_ReportByVectorKey.py](http://www.androbugs.com/images/v1.0.0/MassiveAnalysisTool1.png)
 
-##Requirements
+## Requirements
 
 - Python 2.7.x (DO NOT USE Python 3.X)
 - [PyMongo library](http://api.mongodb.org/python/current/installation.html) (If you want to use the massive analysis tool)
 
-##Licenses
+## Licenses
 
 * AndroBugs Framework is under the license of [GNU GPL v3.0](http://www.gnu.org/licenses/gpl-3.0.txt)
 
